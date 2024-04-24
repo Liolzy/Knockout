@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.dice1, .dice2{
-width: 250px;
-}
-
 body{
     width: 100vw;
     height: 100vh;
@@ -17,11 +13,11 @@ body{
     align-items: center;
 }
 .app-wrapper{
-width: 60%;
-background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,161,233,1) 100%);
-padding: 1rem;
-border-radius: 25px;
+    width: 60%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,161,233,1) 100%);
+    border-radius: 25px;
+    padding: 1rem;
 }
 h1{
     font-size: 5rem;
@@ -32,22 +28,24 @@ h1{
     border-bottom: 1px solid black;
 }
 
+img{
+    width: 250px;
+}
 .dices{
     display: flex;
     justify-content: center;
 }
-
 .dices img{
     margin-right: 20px;
 }
 
-.dice-sum{
+#dice-sum{
     font-size: 3rem;
     text-align: center;
     margin-top: 1rem;
 }
 
-.btn-roll{
+#btn-roll{
     width: 150px;
     padding: 0.5rem;
     font-size: 2rem;
@@ -56,18 +54,16 @@ h1{
     color: white;
     cursor: pointer;
 }
-
 .button-container{
     text-align: center;
     margin-top: 2rem;
 }
 
 .animation{
-    animation: rotate-fadeout 2s; 
+    animation: rotate-fadeout 2s;
 }
-
-@keyframes rotate-fadeout {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-    100% { opacity: 0; }
-  }
+    @keyframes rotate-fadeout {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        100% { opacity: 0; }
+      }
